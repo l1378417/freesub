@@ -5,41 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 104.24.30.89
-  port: 443
+  server: 212.87.190.124
+  port: 99
   udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6nQnSKAxCLJSZbg7KA94QA
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: mybb.com
-  port: 443
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 94.183.170.135
+  port: 8443
   udp: true
   type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 94.183.170.147
   port: 8443
   udp: true
   type: vless
-  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
   tls: true
   reality-opts:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
@@ -49,7 +43,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   server: 94.183.170.135
   port: 443
   udp: true
@@ -58,73 +60,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 217.60.182.79
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: ee1.sferavpn.pro
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: ee1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: 89.125.13.149
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e8b8adc-8782-4f42-b260-81b03ab5fbb2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GtRDWsSY_OKZq0Nu0_KlBeWLM7m46EQCWFl9NVZr8jM
-    short-id: 5145ab05854122b4
-  servername: ee.sharkygames.fun
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  server: 85.158.108.125
-  port: 9462
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
-  server: ee.shamanapp.online
-  port: 443
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -136,10 +71,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,9 +82,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
 rules:
 - MATCH,PROXIES
