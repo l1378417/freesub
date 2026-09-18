@@ -5,30 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 212.87.190.124
-  port: 99
+  server: 178.18.147.66
+  port: 29900
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6nQnSKAxCLJSZbg7KA94QA
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
-  port: 8443
+  port: 443
   udp: true
   type: vless
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -43,23 +38,54 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 217.60.182.79
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: ee1.sferavpn.pro
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ee1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  server: cabinet.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  server: 95.85.224.17
   port: 443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +97,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +110,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
