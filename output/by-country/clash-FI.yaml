@@ -24,19 +24,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 31.77.199.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -49,6 +36,19 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 5.61.91.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 0a4b7c3d
+  servername: www.amd.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 185.79.138.71
   port: 448
@@ -60,8 +60,34 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 185.218.194.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31216f81-3139-0021-bac4-646680314264
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: www.amd.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 185.218.194.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: www.amd.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 37.143.129.244
   port: 443
   udp: true
@@ -74,21 +100,71 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 212.193.18.183
-  port: 8446
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: 185.218.194.69
+  port: 443
   udp: true
   type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  uuid: f5a3bf49-07ca-0021-a96b-9606781e3600
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c
-    short-id: 7f8e9d0c1b2a
-  servername: maps.apple.com
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 6e3f0a5b
+  servername: www.amd.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  server: 2.26.147.118
+  port: 443
+  udp: true
+  type: vless
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: www.amd.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  server: 31.77.199.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  server: 185.255.179.11
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-se-02.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: snob-grpc
+    grpc-service-name: se02-grpc-8e47a
+- name: 🇫🇮 芬兰 (Finland) 13 - xiaohe
+  server: 188.225.56.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 23af657b-e7f0-4f65-85da-dc96b7f30f37
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
+    short-id: a9dc98a7dc87a7dc
+  servername: 188.225.56.11
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,6 +177,12 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,5 +195,11 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 13 - xiaohe
 rules:
 - MATCH,PROXIES
