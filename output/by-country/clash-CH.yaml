@@ -5,24 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 188.114.97.6
-  port: 8080
+  server: 140.238.213.114
+  port: 50160
   udp: true
-  type: vless
-  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn2950.bbxff.workers.dev
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 132.243.175.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 34.158.23.115
   port: 443
   udp: true
@@ -33,8 +23,8 @@ proxies:
     public-key: f8aV8naD8NKt_mLKaOou0qUrIM1Ge25kJNxywpF3OB0
     short-id: d016c76007f78038
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  client-fingerprint: safari
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 45.90.59.15
   port: 443
   udp: true
@@ -46,17 +36,25 @@ proxies:
     public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
     short-id: 19253fae84102271
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  server: 82.38.64.229
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 104.165.205.40
+  server: 104.165.205.42
   port: 8443
   udp: true
   type: hysteria2
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: speedtestmark.com
-  skip-cert-verify: false
+  sni: 104.165.205.42
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  server: 104.165.205.42
+  server: 104.165.205.40
   port: 8443
   udp: true
   type: hysteria2
@@ -72,7 +70,6 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /cdn/v3/live
@@ -88,21 +85,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  server: 104.18.28.234
-  port: 443
-  udp: true
-  type: vless
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
-  tls: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,7 +98,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,6 +111,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
