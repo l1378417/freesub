@@ -6,73 +6,61 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "188.114.96.0",
-      "server_port": 443,
-      "uuid": "20836693-ea23-4f40-a1e7-48a6da897917",
-      "tls": {
-        "enabled": true,
-        "server_name": "netra-85a0ca.shoameni19.workers.dev",
-        "insecure": false
-      },
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "0991a0c4-0ee5-4213-af89-7ad589f853f3",
       "transport": {
         "type": "ws",
-        "path": "/vl/VKec4m2dLHFngRv9xsOhnj9ZLjotNh?ed=2560",
+        "path": "/ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560",
         "headers": {
-          "Host": "netra-85a0ca.shoameni19.workers.dev"
+          "Host": "elenaaaaaaaaaa.cloudns.pro"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "89.110.66.154",
+      "server": "188.114.96.1",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "uuid": "af0db32b-2cb0-48c7-b04e-96003f8c2369",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
+        "server_name": "dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
+        "path": "/vl/WzJrIU8RBLiKEwHrtTJL2XpzurfIundt?ed=2560",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "64.227.67.161",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "194.87.59.13",
+      "server_port": 2085,
+      "uuid": "6687af93-eb39-47a3-9a73-0f79234ef507",
       "transport": {
-        "type": "ws",
-        "path": "/members/detail/gif?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
-      "server": "138.124.25.250",
-      "server_port": 443,
+      "server": "138.68.142.165",
+      "server_port": 2053,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -80,7 +68,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/team/index",
+        "path": "/resource/channel?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
