@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 34.39.174.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  tls: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-    short-id: b62a4da6cd1c4dd6
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
   server: 35.199.90.53
   port: 443
   udp: true
@@ -26,6 +14,18 @@ proxies:
   reality-opts:
     public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
     short-id: 4b414f69a06e1e81
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  server: 34.39.174.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  tls: true
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+    short-id: b62a4da6cd1c4dd6
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:

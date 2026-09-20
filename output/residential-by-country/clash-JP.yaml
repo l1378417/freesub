@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 103.115.18.54
+  server: 110.10.178.240
   port: 443
   udp: true
   type: vless
@@ -13,9 +13,10 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /mall/china/doc?ed=2560
+    path: /albums?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:

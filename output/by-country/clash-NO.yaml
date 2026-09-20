@@ -15,7 +15,7 @@ proxies:
     public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
     short-id: '7606'
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇳🇴 挪威 (Norway) 02 - xiaohe
   server: 46.29.238.88
   port: 40443
@@ -27,15 +27,7 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
     short-id: f7b2
   servername: deepl.com
-  client-fingerprint: random
-- name: 🇳🇴 挪威 (Norway) 03 - xiaohe
-  server: 46.8.210.129
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 2a3b101d-d8f9-40e7-9373-b0ef487c0035
-  sni: disk.api-yandex.net
-  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
-  - 🇳🇴 挪威 (Norway) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
-  - 🇳🇴 挪威 (Norway) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -14,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -34,7 +34,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,25 +44,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇴 挪威 (Norway) 03 - xiaohe",
-      "server": "46.8.210.129",
-      "server_port": 22443,
-      "password": "2a3b101d-d8f9-40e7-9373-b0ef487c0035",
-      "tls": {
-        "enabled": true,
-        "server_name": "disk.api-yandex.net",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
-        "🇳🇴 挪威 (Norway) 02 - xiaohe",
-        "🇳🇴 挪威 (Norway) 03 - xiaohe"
+        "🇳🇴 挪威 (Norway) 02 - xiaohe"
       ]
     },
     {
@@ -70,8 +57,7 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
-        "🇳🇴 挪威 (Norway) 02 - xiaohe",
-        "🇳🇴 挪威 (Norway) 03 - xiaohe"
+        "🇳🇴 挪威 (Norway) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
