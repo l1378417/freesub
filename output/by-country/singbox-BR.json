@@ -6,6 +6,71 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "89.110.66.154",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/streams/home?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+      "server": "217.12.206.160",
+      "server_port": 81,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/members/playlist?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+      "server": "103.31.77.108",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/channels/act",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - xiaohe",
       "server": "34.39.174.220",
       "server_port": 443,
       "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
@@ -28,14 +93,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

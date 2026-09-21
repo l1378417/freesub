@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9094,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "rpgbNnU9rDDU4aWZ"
     },
     {
       "type": "shadowsocks",
@@ -23,9 +23,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -47,25 +47,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9094,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "shadowsocks",
@@ -87,7 +87,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
