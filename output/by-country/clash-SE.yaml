@@ -5,40 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 51.170.185.165
-  port: 45819
+  server: 70.34.212.124
+  port: 8388
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 143.246.196.152
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 143.246.195.138
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 143.246.195.98
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 5.157.10.147
   port: 443
   udp: true
@@ -50,8 +23,31 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: svvedko.nxxzxaw.beer
-  client-fingerprint: random
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 79.141.174.147
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 143.246.195.98
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -61,12 +57,20 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: 143.246.194.60
+  server: 143.246.195.138
   port: 8081
   udp: true
   type: vless
@@ -75,42 +79,15 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  server: 89.22.224.146
-  port: 43788
+  server: 143.246.196.152
+  port: 8081
   udp: true
   type: vless
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   network: ws
   ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  server: 193.42.39.10
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 11 - xiaohe
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
   server: se.belka.network
   port: 443
   udp: true
@@ -122,7 +99,16 @@ proxies:
     public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
     short-id: 7f2e9c4b1a8d6e53
   servername: yahoo.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,7 +124,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -154,6 +139,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "103.86.49.57",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "ais.speedtest.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
       "server": "34.15.162.1",
       "server_port": 443,
       "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
@@ -34,6 +20,20 @@
           "enabled": true,
           "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
           "short_id": "ca672c53fbbac555"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+      "server": "v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
         }
       }
     },
@@ -57,15 +57,22 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-      "server": "118.193.57.167",
-      "server_port": 49667,
-      "uuid": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
-      "security": "auto",
+      "server": "8.222.70.238",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/d46bf492"
+        "path": "/mall/china/doc?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
