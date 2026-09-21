@@ -5,19 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: 164.92.193.243
-  port: 443
+  server: 89.116.180.30
+  port: 8880
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
-    path: /topics?ed=2560fp=chrome
+    path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: vms.lifetime09.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

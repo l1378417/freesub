@@ -5,6 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 104.21.76.194
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  network: ws
+  ws-opts:
+    path: /vl/yLWNcuUuw1jlJpkDhGy
+    headers:
+      Host: fornewiran.ade-1000.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 104.18.34.21
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  tls: true
+  servername: socks5.revil-time3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /socks5://128.140.46.169:13482
+    headers:
+      Host: socks5.revil-time3.workers.dev
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: 153.76.185.189
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 5ebdc9ee-8b41-4487-93af-231cb0b47d60
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -15,18 +61,76 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 06 - xiaohe
+  server: 31.59.121.156
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /go/library/channel?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 捷克 (Czech) 07 - xiaohe
+  server: 31.58.76.68
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /new/dh?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 捷克 (Czech) 08 - xiaohe
+  server: 209.38.239.249
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /shows/data?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+  - 🇨🇿 捷克 (Czech) 06 - xiaohe
+  - 🇨🇿 捷克 (Czech) 07 - xiaohe
+  - 🇨🇿 捷克 (Czech) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+  - 🇨🇿 捷克 (Czech) 06 - xiaohe
+  - 🇨🇿 捷克 (Czech) 07 - xiaohe
+  - 🇨🇿 捷克 (Czech) 08 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,19 +6,14 @@
     {
       "type": "vless",
       "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
-      "server": "164.92.193.243",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
+      "server": "89.116.180.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
         "type": "ws",
-        "path": "/topics?ed=2560fp=chrome",
+        "path": "/",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "vms.lifetime09.workers.dev"
         }
       }
     },

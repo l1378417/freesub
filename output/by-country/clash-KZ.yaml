@@ -30,7 +30,7 @@ proxies:
     public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
     short-id: 69a2
   servername: yahoo.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 83.222.23.81
   port: 38065
@@ -42,8 +42,20 @@ proxies:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
     short-id: fa
   servername: yahoo.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  server: 77.73.232.61
+  port: 19747
+  udp: true
+  type: vless
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  tls: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -55,18 +67,6 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  server: 77.73.232.61
-  port: 19747
-  udp: true
-  type: vless
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  tls: true
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-    short-id: '2001'
-  servername: yahoo.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
