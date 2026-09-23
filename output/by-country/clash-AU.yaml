@@ -13,14 +13,18 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: 172.105.169.70
+  server: 51.161.204.244
   port: 443
   udp: true
   type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
   tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: 34.87.229.148
   port: 443
@@ -58,7 +62,7 @@ proxies:
   port: 20270
   udp: true
   type: vless
-  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
+  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -67,18 +71,20 @@ proxies:
   servername: www.yahoo.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
-  server: 51.161.204.244
-  port: 443
+  server: nova.freshnet.ir
+  port: 2082
   udp: true
   type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
+  uuid: ce2bd817-7fb1-4b94-8125-d6161de31962
   tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: nova.freshnet.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cats/FslNz
+    headers:
+      Host: nova.freshnet.ir
 proxy-groups:
 - name: PROXIES
   type: select
