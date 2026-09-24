@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,6 +14,18 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 431acd7d-ef6c-4d2b-b471-bcdddca8050c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 78.40.195.140
   port: 443
@@ -38,16 +38,8 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.173
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 94.183.224.45
   port: 443
   udp: true
@@ -59,9 +51,17 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: chrome
+  client-fingerprint: safari
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 85.204.107.177
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -69,19 +69,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: 146.70.102.82
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,7 +82,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,6 +93,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
 rules:
 - MATCH,PROXIES

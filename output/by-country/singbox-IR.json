@@ -5,42 +5,43 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "194.76.154.31",
-      "server_port": 40443,
-      "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
+      "tag": "🇮🇷 IR 01 - xiaohe",
+      "server": "62.60.152.1",
+      "server_port": 56328,
+      "uuid": "ce230b9c-0531-40da-bc3f-f27a8e059db1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "table.vkroom-it-service.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
-          "short_id": "a8ae"
+          "public_key": "iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M",
+          "short_id": "f3a9c21e8b6d4571"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-      "server": "2.56.121.43",
+      "tag": "🇮🇷 IR 02 - xiaohe",
+      "server": "62.60.245.148",
       "server_port": 443,
       "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.ikea.com",
+        "server_name": "amazon.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM",
-          "short_id": "86229a5e3b1e6ef4"
+          "public_key": "G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ",
+          "short_id": "eba1498e012ef580"
         }
       }
     },
@@ -49,16 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe",
+        "🇮🇷 IR 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe",
+        "🇮🇷 IR 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
