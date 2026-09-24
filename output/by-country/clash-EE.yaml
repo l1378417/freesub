@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: trojan
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
+  sni: russiapower.accesscam.org
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
@@ -45,7 +45,34 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 91.215.40.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  tls: true
+  reality-opts:
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 5c766813929a1fdd
+  servername: id.dframe.app
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: 45.11.27.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
+    short-id: d0aae44f
+  servername: 5post-gate.x5.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +82,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +93,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
