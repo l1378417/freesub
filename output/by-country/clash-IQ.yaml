@@ -16,7 +16,7 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

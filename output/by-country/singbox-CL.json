@@ -32,21 +32,12 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇱 智利 (Chile) 03 - xiaohe",
-      "server": "64.176.2.21",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "xBStBEVqvGwHPocc"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇱 智利 (Chile) 01 - xiaohe",
-        "🇨🇱 智利 (Chile) 02 - xiaohe",
-        "🇨🇱 智利 (Chile) 03 - xiaohe"
+        "🇨🇱 智利 (Chile) 02 - xiaohe"
       ]
     },
     {
@@ -54,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇱 智利 (Chile) 01 - xiaohe",
-        "🇨🇱 智利 (Chile) 02 - xiaohe",
-        "🇨🇱 智利 (Chile) 03 - xiaohe"
+        "🇨🇱 智利 (Chile) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

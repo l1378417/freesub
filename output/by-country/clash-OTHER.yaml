@@ -5,53 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.72.50
+  server: 172.67.185.131
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  tls: true
+  servername: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.16.72.50
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.16.72.50
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    headers:
+      Host: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
 rules:
 - MATCH,PROXIES

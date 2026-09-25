@@ -15,7 +15,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
