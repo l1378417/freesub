@@ -5,36 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 85.90.217.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 66.163.118.73
-  port: 22324
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 212.227.235.66
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  type: vless
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  tls: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: 83.147.18.3
   port: 443
   udp: true
@@ -46,33 +42,21 @@ proxies:
     public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  server: 212.227.235.66
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  tls: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  server: 138.124.181.185
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 46.28.71.247
   port: 443
   udp: true
   type: vless
-  uuid: 0a975d79-6930-4861-a105-dc50793456de
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: D2NOHlDThz1hjnJyALYmK_2You29nfyoZCwK9Vou9xU
-    short-id: 72ae7f89582e5c43
-  servername: bags.yump.online
-  client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   server: 87.76.179.117
   port: 7443
   udp: true
@@ -85,7 +69,7 @@ proxies:
     short-id: d2061bb1
   servername: www.samsung.com
   client-fingerprint: edge
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
   server: esbe.vihodest.net
   port: 443
   udp: true
@@ -98,7 +82,15 @@ proxies:
     short-id: e93196a756abca09
   servername: esbe.vihodest.net
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
+  server: 85.90.217.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
   server: mygptagent.org
   port: 443
   udp: true
@@ -112,19 +104,6 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇪🇸 西班牙 (Spain) 11 - xiaohe
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,8 +118,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -155,7 +132,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
 rules:
 - MATCH,PROXIES

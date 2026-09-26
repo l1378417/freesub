@@ -10,17 +10,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 35.194.157.16
   port: 43450
   udp: true
@@ -33,6 +25,14 @@ proxies:
     short-id: e65d010354bdad73
   servername: www.amd.com
   client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   server: 104.199.134.231
   port: 28364
@@ -47,18 +47,18 @@ proxies:
   servername: www.sony.com
   client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: 35.221.158.209
-  port: 32981
+  server: 35.201.163.218
+  port: 30837
   udp: true
   type: vless
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
   servername: www.sony.com
-  client-fingerprint: ios
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
