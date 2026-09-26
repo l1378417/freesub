@@ -16,7 +16,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 151.241.226.201
   port: 2053
@@ -28,7 +28,22 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 206.1.98.86
+  port: 18443
+  udp: true
+  type: vless
+  uuid: 33e40dec-442b-46b2-b9b3-be1848ce7df8
+  tls: true
+  reality-opts:
+    public-key: bYVNm1Huc5MMhVUBDAO5O7O7mjZXjxESWUQzVPIoqjM
+    short-id: ca
+  servername: www.bing.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: '@tunelm2mvpn@tunelm2mvpn@tunelm2mvpn'
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
