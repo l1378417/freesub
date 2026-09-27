@@ -26,13 +26,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  server: 82.38.64.237
+  server: 82.38.64.235
   port: 8443
   udp: true
   type: hysteria2
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   server: 152.67.75.161
   port: 443
@@ -44,22 +44,14 @@ proxies:
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 31.76.104.152
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: 77.110.104.238
   port: 443
   udp: true
   type: hysteria2
   password: 5413edfb-08d6-4fba-b51c-809c04feb127
   sni: ch2-hy2.veilvpn.life
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: 151.242.2.81
   port: 443
   udp: true
@@ -68,7 +60,7 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /cdn/v3/live
@@ -85,7 +77,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,6 +88,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
