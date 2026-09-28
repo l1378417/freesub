@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 挪威 (Norway) 01 - xiaohe
-  server: 46.29.238.72
-  port: 443
+  server: 46.29.238.88
+  port: 40443
   udp: true
   type: vless
-  uuid: d3aeadf0-94bd-46bd-88f5-ed920a3449fd
-  flow: xtls-rprx-vision
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
   tls: true
   reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: bbe7cea59ba5fc76
-  servername: no.netgridflow.com
-  client-fingerprint: qq
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+    short-id: f7b2
+  servername: deepl.com
+  client-fingerprint: firefox
 - name: 🇳🇴 挪威 (Norway) 02 - xiaohe
   server: 185.213.23.63
   port: 990
