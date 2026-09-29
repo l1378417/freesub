@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 148.113.5.44
+  server: 104.21.69.118
   port: 443
   udp: true
   type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  flow: xtls-rprx-vision
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
   tls: true
-  reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 152.67.8.205
   port: 80

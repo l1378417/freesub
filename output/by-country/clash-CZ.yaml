@@ -5,23 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 194.87.59.26
-  port: 2085
+  server: 45.130.125.126
+  port: 443
   udp: true
   type: vless
-  uuid: cbbc93ef-6d35-463a-a856-64265c42e66d
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  tls: true
+  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.102
-  port: 3090
+  server: 172.64.80.1
+  port: 2053
   udp: true
   type: vless
-  uuid: cbbc93ef-6d35-463a-a856-64265c42e66d
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  tls: true
+  servername: fans.liverpool.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: fans.liverpool.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select

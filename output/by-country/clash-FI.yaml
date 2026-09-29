@@ -31,18 +31,19 @@ proxies:
   type: hysteria2
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 185.79.138.71
-  port: 448
+  server: 65.109.28.164
+  port: 443
   udp: true
   type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 95.216.27.15
@@ -57,18 +58,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: cosw.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: cosw.ggisopi.su
-  client-fingerprint: qq
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -80,8 +69,32 @@ proxies:
     public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
     short-id: 568d87a47271344e
   servername: 144.31.27.215
-  client-fingerprint: edge
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 179.254.109.54
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: cosw.ggisopi.su
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
   server: 153.52.117.131
   port: 443
   udp: true
@@ -90,11 +103,11 @@ proxies:
   tls: true
   servername: fi.astrafic.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: vless-grpc
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
   server: 2.27.13.61
   port: 2096
   udp: true
@@ -103,10 +116,13 @@ proxies:
   tls: true
   servername: st6dbbc.rumedia-cdn.com
   skip-cert-verify: false
+  client-fingerprint: random
   network: ws
   ws-opts:
     path: /cdn/v3/live
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+    headers:
+      Host: st6dbbc.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -134,6 +150,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,5 +166,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
 rules:
 - MATCH,PROXIES

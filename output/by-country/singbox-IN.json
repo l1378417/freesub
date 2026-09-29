@@ -6,21 +6,23 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "148.113.5.44",
+      "server": "104.21.69.118",
       "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
+      "uuid": "1443b7a1-7ba9-4ec9-b904-2e867367b5d7",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "odd-violet-5440.asdgrweeee13.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "odd-violet-5440.asdgrweeee13.workers.dev"
         }
       }
     },

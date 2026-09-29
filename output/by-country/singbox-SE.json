@@ -6,22 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "70.34.212.124",
-      "server_port": 8388,
+      "server": "172.238.244.13",
+      "server_port": 17000,
       "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "51.20.86.152",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "51.20.96.231",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -29,15 +21,39 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "server": "13.49.76.55",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "51.20.86.152",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
       "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "server": "13.48.104.64",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -47,7 +63,7 @@
         "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -58,8 +74,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-      "server": "79.141.174.147",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
+      "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -67,7 +83,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -81,40 +97,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-      "server": "13.49.76.55",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
-      "server": "13.60.213.145",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-      "server": "172.238.244.13",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
-      "server": "13.62.228.76",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 11 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -138,7 +122,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 12 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
       "server": "2.27.14.218",
       "server_port": 2096,
       "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
@@ -148,7 +132,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -158,14 +142,6 @@
           "Host": "stf7697.rumedia-cdn.com"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 13 - xiaohe",
-      "server": "51.20.122.188",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
     },
     {
       "type": "selector",
@@ -181,10 +157,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 11 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 12 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 13 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 10 - xiaohe"
       ]
     },
     {
@@ -200,10 +173,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 11 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 12 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 13 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
