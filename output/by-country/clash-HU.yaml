@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: ccs2g.pai50288.uk
+- name: 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  server: 45.9.168.211
   port: 443
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: 7de5e70d-b95e-4019-affb-636151647b52
+  flow: xtls-rprx-vision
   tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
+  reality-opts:
+    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
+  servername: mzone.hu.3cloudhost.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
 rules:
 - MATCH,PROXIES
