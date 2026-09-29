@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 45.149.147.97
   port: 443
   udp: true
@@ -29,7 +17,7 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 185.79.138.71
   port: 448
   udp: true
@@ -40,21 +28,8 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
-  client-fingerprint: qq
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 31.76.245.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
-    short-id: a1b2c3d4e5f67890
-  servername: dzen.ru
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -67,7 +42,7 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 65.109.28.164
   port: 443
   udp: true
@@ -80,6 +55,31 @@ proxies:
     short-id: 90ec9bba2019
   servername: web.eitaa.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 65.109.199.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3ba22938-7323-48ef-a981-7092171dc60e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
+    short-id: 7a0300af51a1c4cf
+  servername: Miro.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 144.31.27.215
   port: 43000
@@ -92,7 +92,7 @@ proxies:
     public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
     short-id: 568d87a47271344e
   servername: 144.31.27.215
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 2.27.13.61
   port: 2096
@@ -102,13 +102,23 @@ proxies:
   tls: true
   servername: st6dbbc.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: random
   network: ws
   ws-opts:
     path: /cdn/v3/live
-    headers:
-      Host: st6dbbc.rumedia-cdn.com
 - name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: 212.147.245.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: 042d2d08-2973-5d10-97ad-3b75f16bbe54
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI
+    short-id: 330a464a00000000
+  servername: online.1c.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
   server: 144.31.212.253
   port: 443
   udp: true
@@ -116,30 +126,28 @@ proxies:
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  server: 138.124.17.179
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  server: 65.109.249.114
+  port: 80
+  udp: true
+  type: vless
+  uuid: 794990ea-dc34-4eff-8a43-020a92fec381
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaohe
+  server: fi.omuservice.tech
   port: 443
   udp: true
   type: vless
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: eqlfwoHUoRvNeOKYzCzHSV64rSzyUVGS2w_nsOpWIG4
-    short-id: ffdf2e6056999b66
-  servername: finewl1.krusofiya.fun
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
-  server: fi.astrafic.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
-  tls: true
-  servername: fi.astrafic.ru
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
+    public-key: KEoz-uTjqCGwtNakCD-XewbDk_8Vwm_nFv0zg3c2Syg
+    short-id: 0e0dae08f2394a
+  servername: ozone.nl
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,6 +164,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
   - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -172,5 +181,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
   - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 12 - xiaohe
 rules:
 - MATCH,PROXIES

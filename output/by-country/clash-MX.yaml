@@ -15,7 +15,7 @@ proxies:
     public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
     short-id: dcabbf24adf88abc
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: ios
 - name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
   server: 45.134.9.133
   port: 8443
