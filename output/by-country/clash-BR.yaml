@@ -5,16 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 103.133.1.30
-  port: 8880
+  server: 89.39.161.157
+  port: 443
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aksai.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: vms.lifetime36.workers.dev
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
