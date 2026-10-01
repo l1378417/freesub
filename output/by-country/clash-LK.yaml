@@ -14,7 +14,7 @@ proxies:
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
-  server: support.zoom.us
+  server: free.sahanwickramasinghe.me
   port: 80
   udp: true
   type: vless
@@ -22,8 +22,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
