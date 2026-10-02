@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "199.181.197.40",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime19.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
       "server": "85.117.235.50",
       "server_port": 443,
       "uuid": "f4d71fd6-1c25-4748-836b-1dbda9268039",
@@ -15,7 +29,7 @@
         "server_name": "cz1.animeteka.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,35 +4,48 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16115,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-      "server": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "password": "5f091cbe-fb34-11ea-9777-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+        "server_name": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-      "server": "44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com",
-        "insecure": false
+        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "42.200.173.5",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3.ap-east-1.amazonaws.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
       }
     },
     {
@@ -40,7 +53,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
       ]
@@ -49,7 +62,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
       ],

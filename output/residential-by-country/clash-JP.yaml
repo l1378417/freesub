@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 45.76.87.125
+  port: 14750
+  udp: true
+  type: vless
+  uuid: 432289de-8dec-46ef-9a3f-001a3af178a7
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/@Marisa_kristi '
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+rules:
+- MATCH,PROXIES

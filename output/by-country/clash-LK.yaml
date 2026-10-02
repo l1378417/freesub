@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: free.sahanwickramasinghe.me
-  port: 80
+  server: trackydev.site
+  port: 443
   udp: true
   type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  tls: true
+  servername: trackydev.site
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: trackydev.site
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
   server: 51.75.67.209
   port: 443
@@ -24,6 +27,16 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 03 - xiaohe
+  server: free.sahanwickramasinghe.me
+  port: 80
+  udp: true
+  type: vless
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
   - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
   - 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 03 - xiaohe
 rules:
 - MATCH,PROXIES

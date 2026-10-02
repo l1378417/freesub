@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 01 - xiaohe",
-      "server": "139.84.247.164",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "tfAcRikawhNoZAhu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - xiaohe",
       "server": "102.37.156.224",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -21,11 +13,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 03 - xiaohe",
+      "tag": "🇿🇦 南非 (South Africa) 02 - xiaohe",
       "server": "102.133.165.160",
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
       "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 03 - xiaohe",
+      "server": "139.84.247.164",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tfAcRikawhNoZAhu"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇿🇦 南非 (South Africa) 04 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16266,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -34,7 +42,8 @@
         "auto",
         "🇿🇦 南非 (South Africa) 01 - xiaohe",
         "🇿🇦 南非 (South Africa) 02 - xiaohe",
-        "🇿🇦 南非 (South Africa) 03 - xiaohe"
+        "🇿🇦 南非 (South Africa) 03 - xiaohe",
+        "🇿🇦 南非 (South Africa) 04 - xiaohe"
       ]
     },
     {
@@ -43,7 +52,8 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - xiaohe",
         "🇿🇦 南非 (South Africa) 02 - xiaohe",
-        "🇿🇦 南非 (South Africa) 03 - xiaohe"
+        "🇿🇦 南非 (South Africa) 03 - xiaohe",
+        "🇿🇦 南非 (South Africa) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

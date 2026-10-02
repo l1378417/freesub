@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 199.181.197.40
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime19.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 85.117.235.50
   port: 443
   udp: true
@@ -16,18 +27,20 @@ proxies:
     public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
     short-id: 232b1b09e45325a4
   servername: cz1.animeteka.info
-  client-fingerprint: ios
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
