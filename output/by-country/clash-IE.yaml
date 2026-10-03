@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: ie.tronsg.com
+  server: 3.255.76.207
   port: 443
   udp: true
   type: trojan
@@ -26,6 +26,14 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: chrome
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  server: loved-shark.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
   server: 198.55.102.59
   port: 4443
   udp: true
@@ -37,7 +45,7 @@ proxies:
     public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
     short-id: ce6767c3f1
   servername: vk.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +54,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
