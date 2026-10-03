@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇹 GT 01 - xiaohe",
-      "server": "185.47.254.251",
+      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe",
+      "server": "34.18.212.19",
       "server_port": 443,
-      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b6f775c2-70fd-4247-8d12-82cac46fdd50",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
-          "short_id": "6c059ecfddf9b179"
+          "public_key": "tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ",
+          "short_id": "c5426331173ca15c"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇹 GT 01 - xiaohe"
+        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇹 GT 01 - xiaohe"
+        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

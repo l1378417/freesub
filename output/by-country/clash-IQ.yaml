@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 188.114.97.1
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  tls: true
+  servername: bold-term-4edd.mbigspot.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
+- name: 🇮🇶 IQ 02 - xiaohe
+  server: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
+  tls: true
+  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/1zCIGMyxlm8xzeGwdyy
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 02 - xiaohe
+rules:
+- MATCH,PROXIES
