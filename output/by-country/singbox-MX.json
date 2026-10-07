@@ -4,15 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "211.20.156.191",
-      "server_port": 28121,
-      "password": "i99Cef",
+      "server": "45.134.9.133",
+      "server_port": 8443,
+      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
       "tls": {
         "enabled": true,
-        "server_name": "ctldl.windowsupdate.com",
+        "server_name": "ul-mexico1.09vpn.com",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
