@@ -15,16 +15,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 144.24.109.215
-  port: 51000
-  udp: true
-  type: hysteria2
-  password: 06133d56-2d98-4ca5-b9d3-bbf2d65bc238
-  sni: cn.cremedelamer.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 148.113.5.44
   port: 443
   udp: true
@@ -36,8 +28,8 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇮🇳 印度 (India) 04 - xiaohe
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -48,6 +40,12 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 103.194.228.102
+  port: 4443
+  udp: true
+  type: vless
+  uuid: f247f7e4-04bb-48a5-828d-b8e75ec4c3af
 proxy-groups:
 - name: PROXIES
   type: select
